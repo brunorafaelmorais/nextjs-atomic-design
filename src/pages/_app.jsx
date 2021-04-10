@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import GlobalStyle from '../shared/styles/globals';
+import GlobalStyle from '@/shared/styles/globals';
 
 function MyApp({ Component, pageProps }) {
   return (

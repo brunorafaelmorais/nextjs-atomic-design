@@ -32,9 +32,12 @@
   },
   "settings": {
     "import/resolver": {
-      "alias": [
-        ["@", "./src"]
-      ]
+      "alias": {
+        "map": [
+          ["@", "./src"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
     }
   }
 }

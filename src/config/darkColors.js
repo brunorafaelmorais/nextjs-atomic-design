@@ -1,6 +1,6 @@
-import { generateColorPalette } from '@/shared/utils';
+import generateColorPalette from '@/shared/utils/generateColorPalette';
 
-export const lightColors = {
+export default {
   white: '#fff',
   black: '#000',
   primary: {

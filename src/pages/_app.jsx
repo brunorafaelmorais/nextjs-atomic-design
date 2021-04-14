@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
-import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from '@/shared/styles/globals';
-import { theme } from '@/shared/config/styles';
+import AppProvider from '@/shared/contexts';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme()}>
+    <AppProvider>
       <GlobalStyle />
       <Component {...pageProps} />
-    </ThemeProvider>
+    </AppProvider>
   );
 }
 

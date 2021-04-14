@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export function generateFontStyles(typographyData) {
+export default function generateFontStyles(typographyData) {
   return Object.entries(typographyData).reduce((accumulator, currentValue) => {
     const [key, props] = currentValue;
     const { font, weight, size, letterSpacing, lineHeight } = props;

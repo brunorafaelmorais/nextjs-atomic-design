@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { typography } from '@/shared/config/styles/typography';
+import typography from '@/config/typography';
 
 import { Container } from './styles';
 

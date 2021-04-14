@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import Text from '@/shared/components/atoms/Text';
+
 export default function Home() {
   return (
     <div>
@@ -9,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Hello World</h1>
+        <Text>Hello World</Text>
       </main>
     </div>
   );

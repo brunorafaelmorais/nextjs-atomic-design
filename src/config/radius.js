@@ -1,6 +1,6 @@
 import { rem } from 'polished';
 
-export const radius = {
+export default {
   xs: rem(2),
   sm: rem(4),
   md: rem(6),

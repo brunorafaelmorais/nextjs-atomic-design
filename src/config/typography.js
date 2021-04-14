@@ -13,7 +13,7 @@ export const fontFamilyDefault = [
   '"Segoe UI Symbol"',
 ].join(',');
 
-export const typography = {
+export default {
   h1: {
     font: fontFamilyDefault,
     weight: 300,

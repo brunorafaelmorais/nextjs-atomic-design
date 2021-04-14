@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { generateFontStyles } from '@/shared/utils';
+import generateFontStyles from '@/shared/utils/generateFontStyles';
 
 export const Container = styled.span`
   ${({ theme, variant }) =>

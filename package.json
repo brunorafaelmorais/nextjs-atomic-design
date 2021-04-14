@@ -17,6 +17,7 @@
     ]
   },
   "dependencies": {
+    "js-cookie": "^2.2.1",
     "next": "10.1.3",
     "polished": "^4.1.1",
     "prop-types": "^15.7.2",

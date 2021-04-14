@@ -43,6 +43,10 @@ const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
     box-sizing: border-box;
   }
+
+  body {
+    font-family: ${({ theme }) => theme.fontFamily};
+  }
 `;
 
 export default GlobalStyle;

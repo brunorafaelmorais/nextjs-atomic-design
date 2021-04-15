@@ -1,25 +1,16 @@
-import { createContext, useCallback, useState } from 'react';
+import { createContext, useCallback } from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import generateTheme from '@/shared/utils/generateTheme';
-import Storage from '@/shared/infra/services/storage';
+import usePersistedState from '../hooks/usePersistedState';
 
 export const ThemeContext = createContext('');
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(() => {
-    const storagedTheme = Storage.get('@app.theme');
+  const [theme, setTheme] = usePersistedState('@app.theme', 'light');
 
-    if (storagedTheme) return storagedTheme;
-
-    return 'light';
-  });
-
-  const changeTheme = useCallback(type => {
-    setTheme(type);
-    Storage.set('@app.theme', type);
-  }, []);
+  const changeTheme = useCallback(type => setTheme(type), [setTheme]);
 
   const themeType = () => generateTheme(theme);
 
